@@ -16,7 +16,7 @@ class Hand_Positioner{
     var tickRevsPerPart: Int
     var FaceResetOffset: Float //enter the angle away from TOP, so to reset at the right
                                 //would be pi/2
-    var TimeResetOffset: Int  //How many seconds away from noon we are
+    var TimeResetOffset: Int  //How many seconds away from noon we are starting the clock at
     
     init(pPD: Int, pRPD: Int, tPP: Int, tRPP: Int, fRO:Float, tRO: Int){
         partsPerDay = pPD
@@ -39,10 +39,23 @@ class Hand_Positioner{
         return (2 * Float(Double.pi) * portionOfDay) * Float(partRevsPerDay) + FaceResetOffset
         
     }
-    //Time it takes for a 360 degree turn of our clock's part hand. Can be used to find
+    //Time it takes for a 360 degree turn of our clock's part hand, in seconds. Can be used to find
     //Animation speed
     func partDuration()->Int{
         return Int(24*60*60) / partRevsPerDay
     }
+    
+    func tickAngle(timeHour:Int, timeMin:Int, timeSec:Int)->Float{
+        var totalTime :Int
+        totalTime = timeSec + timeMin * 60 + timeHour * (60^2) + TimeResetOffset
+        let partTime : Int = (24*60*60/partsPerDay)
+        totalTime %= partTime
+        let portionOfPart:Float = Float(totalTime)/Float(partTime)
+        return (2 * Float(Double.pi) * portionOfPart) * Float(tickRevsPerPart) + FaceResetOffset
+    }
+    func tickDuration()->Int{
+        return Int(24*60*60)/(partsPerDay * tickRevsPerPart)
+    }
+    
     
 }
