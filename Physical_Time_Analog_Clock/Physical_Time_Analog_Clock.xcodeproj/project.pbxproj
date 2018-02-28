@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		02C1C6B0203A0DC6000F5FD0 /* handPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1C6AF203A0DC6000F5FD0 /* handPosition.swift */; };
+		02C1C6C1203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1C6C0203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift */; };
 		5DF847382038F4F5007E7322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF847372038F4F5007E7322 /* AppDelegate.swift */; };
 		5DF8473A2038F4F5007E7322 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF847392038F4F5007E7322 /* ViewController.swift */; };
 		5DF8473D2038F4F5007E7322 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DF8473B2038F4F5007E7322 /* Main.storyboard */; };
@@ -16,8 +17,21 @@
 		5DF8474A2038F657007E7322 /* clockHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF847492038F657007E7322 /* clockHand.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		02C1C6C3203E118E000F5FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DF8472C2038F4F5007E7322 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DF847332038F4F5007E7322;
+			remoteInfo = Physical_Time_Analog_Clock;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		02C1C6AF203A0DC6000F5FD0 /* handPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handPosition.swift; sourceTree = "<group>"; };
+		02C1C6BE203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Physical_Time_Analog_ClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		02C1C6C0203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physical_Time_Analog_ClockTests.swift; sourceTree = "<group>"; };
+		02C1C6C2203E118E000F5FD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DF847342038F4F5007E7322 /* Physical_Time_Analog_Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Physical_Time_Analog_Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DF847372038F4F5007E7322 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5DF847392038F4F5007E7322 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +43,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		02C1C6BB203E118E000F5FD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DF847312038F4F5007E7322 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02C1C6BF203E118E000F5FD0 /* Physical_Time_Analog_ClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				02C1C6C0203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift */,
+				02C1C6C2203E118E000F5FD0 /* Info.plist */,
+			);
+			path = Physical_Time_Analog_ClockTests;
+			sourceTree = "<group>";
+		};
 		5DF8472B2038F4F4007E7322 = {
 			isa = PBXGroup;
 			children = (
 				5DF847362038F4F5007E7322 /* Physical_Time_Analog_Clock */,
+				02C1C6BF203E118E000F5FD0 /* Physical_Time_Analog_ClockTests */,
 				5DF847352038F4F5007E7322 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				5DF847342038F4F5007E7322 /* Physical_Time_Analog_Clock.app */,
+				02C1C6BE203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +105,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		02C1C6BD203E118E000F5FD0 /* Physical_Time_Analog_ClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02C1C6C5203E118E000F5FD0 /* Build configuration list for PBXNativeTarget "Physical_Time_Analog_ClockTests" */;
+			buildPhases = (
+				02C1C6BA203E118E000F5FD0 /* Sources */,
+				02C1C6BB203E118E000F5FD0 /* Frameworks */,
+				02C1C6BC203E118E000F5FD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02C1C6C4203E118E000F5FD0 /* PBXTargetDependency */,
+			);
+			name = Physical_Time_Analog_ClockTests;
+			productName = Physical_Time_Analog_ClockTests;
+			productReference = 02C1C6BE203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		5DF847332038F4F5007E7322 /* Physical_Time_Analog_Clock */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5DF847462038F4F5007E7322 /* Build configuration list for PBXNativeTarget "Physical_Time_Analog_Clock" */;
@@ -100,6 +150,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Xi Stephen Ouyang";
 				TargetAttributes = {
+					02C1C6BD203E118E000F5FD0 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5DF847332038F4F5007E7322;
+					};
 					5DF847332038F4F5007E7322 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -120,11 +175,19 @@
 			projectRoot = "";
 			targets = (
 				5DF847332038F4F5007E7322 /* Physical_Time_Analog_Clock */,
+				02C1C6BD203E118E000F5FD0 /* Physical_Time_Analog_ClockTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		02C1C6BC203E118E000F5FD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DF847322038F4F5007E7322 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +201,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		02C1C6BA203E118E000F5FD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02C1C6C1203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5DF847302038F4F5007E7322 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,6 +221,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02C1C6C4203E118E000F5FD0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DF847332038F4F5007E7322 /* Physical_Time_Analog_Clock */;
+			targetProxy = 02C1C6C3203E118E000F5FD0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5DF8473B2038F4F5007E7322 /* Main.storyboard */ = {
@@ -171,6 +250,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		02C1C6C6203E118E000F5FD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YTQFW854B6;
+				INFOPLIST_FILE = Physical_Time_Analog_ClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "randomidentifieridk.Physical-Time-Analog-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Physical_Time_Analog_Clock.app/Physical_Time_Analog_Clock";
+			};
+			name = Debug;
+		};
+		02C1C6C7203E118E000F5FD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YTQFW854B6;
+				INFOPLIST_FILE = Physical_Time_Analog_ClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "randomidentifieridk.Physical-Time-Analog-ClockTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Physical_Time_Analog_Clock.app/Physical_Time_Analog_Clock";
+			};
+			name = Release;
+		};
 		5DF847442038F4F5007E7322 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -311,6 +422,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		02C1C6C5203E118E000F5FD0 /* Build configuration list for PBXNativeTarget "Physical_Time_Analog_ClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02C1C6C6203E118E000F5FD0 /* Debug */,
+				02C1C6C7203E118E000F5FD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5DF8472F2038F4F5007E7322 /* Build configuration list for PBXProject "Physical_Time_Analog_Clock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
