@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0222D929204E05ED0067EC35 /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0222D928204E05ED0067EC35 /* Solar.swift */; };
 		5D3BC88520453FD100DA51F3 /* clockFace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3BC88420453FD100DA51F3 /* clockFace.swift */; };
 		5D693905204DE40F00999FF7 /* clockRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D693904204DE40F00999FF7 /* clockRotationAnimation.swift */; };
 		5D9576532044A4A3004760D4 /* handFormulas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9576522044A4A3004760D4 /* handFormulas.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0222D928204E05ED0067EC35 /* Solar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 		5D3BC88420453FD100DA51F3 /* clockFace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockFace.swift; sourceTree = "<group>"; };
 		5D693904204DE40F00999FF7 /* clockRotationAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clockRotationAnimation.swift; sourceTree = "<group>"; };
 		5D9576522044A4A3004760D4 /* handFormulas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handFormulas.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				5DF8473E2038F4F5007E7322 /* Assets.xcassets */,
 				5DF847402038F4F5007E7322 /* LaunchScreen.storyboard */,
 				5DF847432038F4F5007E7322 /* Info.plist */,
+				0222D928204E05ED0067EC35 /* Solar.swift */,
 			);
 			path = Physical_Time_Analog_Clock;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				5D3BC88520453FD100DA51F3 /* clockFace.swift in Sources */,
 				5D9576532044A4A3004760D4 /* handFormulas.swift in Sources */,
 				5DF8474A2038F657007E7322 /* clockHand.swift in Sources */,
+				0222D929204E05ED0067EC35 /* Solar.swift in Sources */,
 				5DF847382038F4F5007E7322 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

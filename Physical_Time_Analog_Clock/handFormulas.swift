@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import CoreLocation
 
 let NOON_MODE = 1
 let DAWN_MODE = 2
@@ -21,7 +21,9 @@ class Hand_Positioner{
     var FaceResetOffset: Float //enter the angle away from TOP, so to reset at the right
     //would be pi/2
     var TimeResetOffset: Int  //How many seconds away from noon we are starting the clock at
+    //The clockmode decides our anchor point, currently accepts noon and dawn
     var Clockmode: Int
+    var Solarcalc = Solar.init(coordinate: CLLocationCoordinate2D.init(latitude: 39.37, longitude: 122.03))
     
     
     init(pPD: Int, pRPD: Int, tPP: Int, tRPP: Int, fRO:Float = 0, tRO: Int = 0, mode: Int = NOON_MODE){
