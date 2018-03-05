@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02201CFA204DE348003A46CF /* Solar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02201CF9204DE348003A46CF /* Solar.swift */; };
 		02C1C6B0203A0DC6000F5FD0 /* handPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1C6AF203A0DC6000F5FD0 /* handPosition.swift */; };
 		02C1C6C1203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C1C6C0203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift */; };
 		5DF847382038F4F5007E7322 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF847372038F4F5007E7322 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02201CF9204DE348003A46CF /* Solar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Solar.swift; sourceTree = "<group>"; };
 		02C1C6AF203A0DC6000F5FD0 /* handPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = handPosition.swift; sourceTree = "<group>"; };
 		02C1C6BE203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Physical_Time_Analog_ClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02C1C6C0203E118E000F5FD0 /* Physical_Time_Analog_ClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physical_Time_Analog_ClockTests.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				5DF847402038F4F5007E7322 /* LaunchScreen.storyboard */,
 				5DF847432038F4F5007E7322 /* Info.plist */,
 				02C1C6AF203A0DC6000F5FD0 /* handPosition.swift */,
+				02201CF9204DE348003A46CF /* Solar.swift */,
 			);
 			path = Physical_Time_Analog_Clock;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02201CFA204DE348003A46CF /* Solar.swift in Sources */,
 				5DF8473A2038F4F5007E7322 /* ViewController.swift in Sources */,
 				02C1C6B0203A0DC6000F5FD0 /* handPosition.swift in Sources */,
 				5DF8474A2038F657007E7322 /* clockHand.swift in Sources */,
