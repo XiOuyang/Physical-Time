@@ -23,7 +23,7 @@ class Hand_Positioner{
     var TimeResetOffset: Int  //How many seconds away from noon we are starting the clock at
     //The clockmode decides our anchor point, currently accepts noon and dawn
     var Clockmode: Int
-    var Solarcalc = Solar.init(coordinate: CLLocationCoordinate2D.init(latitude: 39.37, longitude: 122.03))
+
     
     
     init(pPD: Int, pRPD: Int, tPP: Int, tRPP: Int, fRO:Float = 0, tRO: Int = 0, mode: Int = NOON_MODE){
@@ -35,6 +35,7 @@ class Hand_Positioner{
         FaceResetOffset = fRO
         TimeResetOffset = tRO
         Clockmode = mode
+        getDawn(myDate: NSDate() as Date)
         
         
     }
@@ -70,20 +71,25 @@ class Hand_Positioner{
     func getModeOffset()->Int{
         var modeOffset = 0
         if(Clockmode == DAWN_MODE){
-            modeOffset = -getDawn(date: 11)
+            modeOffset = -getDawn(myDate: NSDate() as Date)
         }
         return modeOffset
     }
     //TODO: Find how much time will be had by a dawn mode clock
     func getFullDay()->Int{
         if(Clockmode == DAWN_MODE){
-            return 24*60*60 - (getDawn(date: 11)-getDawn(date: 12))
+            return 24*60*60 - (getDawn(myDate: NSDate() as Date))-getDawn(myDate: NSDate() as Date)
         }
         return 24*60*60
     }
     //TODO: Implement Cris' method for dawn finding
-    func getDawn(date: Int)->Int{
-        return 8 * 60 * 60
+    func getDawn(myDate: Date)->Int{
+        let Solarcalc = Solar.init(for: myDate, coordinate: CLLocationCoordinate2D.init(latitude: 39.37, longitude: 122.03))
+        //Ok, we have the date we need for sunrise, now to convert it
+        //That'll involve timezones, convert to hours/minutes/seconds, the works
+        print( (Solarcalc?.sunrise as NSDate?)?.description as Any )
+        print( Solarcalc?.sunrise?.description as Any )
+        return 8 * 3600
     }
     
     
